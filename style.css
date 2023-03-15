@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: grid;
+    padding: 40px;
+    grid-template-areas: 
+        "nav nav"
+        "main header"
+        "footer footer";
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 50px 1fr 50px;
+    background-image: url(./img/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav{
+    grid-area: nav;
+}
+.menu{
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    place-items: center;
+  
+}
+
+main{
+    grid-area: main;
+}
+
+.texto{
+    grid-area: texto;
+    height: 250px;
+    width: 500px;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+.rick-image{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(5%, 0);
+}
