@@ -15,44 +15,61 @@ body{
         "footer footer";
     grid-template-columns: 1fr 40px;
     grid-template-rows: 50px 1fr 50px;
-    background-image: url(./img/wallpaper.png);
+    background-image: url(./img/wallpaper4.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
 }
 nav{
+    background-color: #807155; 
+    opacity:0.7;
+    border-radius: 35px;
     grid-area: nav;
+    height: 35px;
 }
+
 .menu{
-    background-color: black;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
     text-decoration: none;
+    font-weight: bold
+    
 }
 
 a{
-    color: white;
+    color:  white;
     text-decoration: none;
 }
+
+
 
 header{
     grid-area: header;
     display: grid;
-    place-items: center;
-  
+    place-items: end
+;
 }
 
 main{
     grid-area: main;
+    height: 500px;
+    width: 800px;
 }
 
 .texto{
     grid-area: texto;
-    height: 250px;
-    width: 500px;
+    height: 220px;
+    width: 550px;
+}
+
+.videos{
+    height: 100px;
+    width: 700px;
+    
+    gap: 25px;
 }
 
 
@@ -64,5 +81,5 @@ footer{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(5%, 0);
+    transform: translate(50%, 0);
 }
